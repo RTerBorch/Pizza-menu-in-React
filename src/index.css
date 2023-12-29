@@ -108,12 +108,14 @@ body {
 .pizza {
   display: flex;
   gap: 3.2rem;
+  align-items: center; /* This will vertically center the flex items */
 }
 
 .pizza img {
-  width: 12rem;
-  aspect-ratio: 1;
-  align-self: start;
+  width: 100%; /* or whatever width you prefer */
+  height: auto; /* maintains the aspect ratio */
+  object-fit: cover; /* cover the containing area */
+  /* If you set a height here, it will ensure all images are the same height */
 }
 
 .pizza div {
